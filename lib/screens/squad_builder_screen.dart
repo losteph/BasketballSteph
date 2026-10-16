@@ -204,7 +204,7 @@ class SquadBuilderScreenState extends State<SquadBuilderScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text('FORMAZIONI MANUALI', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w900, color: Colors.white)),
+              const Text('FORMAZIONI', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w900, color: Colors.white)),
               Row(
                 children: [
                   OutlinedButton.icon(
