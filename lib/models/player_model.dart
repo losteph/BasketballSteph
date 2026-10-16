@@ -67,8 +67,8 @@ class PlayerModel {
 
   static const Map<String, int> gradeValues = {
     'A+': 99, 'A': 92, 'A-': 87,
-    'B+': 82, 'B': 77, 'B-': 73,
-    'C+': 66, 'C': 62, 'C-': 55,
+    'B+': 82, 'B': 77, 'B-': 72,
+    'C+': 67, 'C': 62, 'C-': 55,
   };
 
   static const Map<PlayerRole, Map<String, double>> roleWeights = {
@@ -98,19 +98,19 @@ class PlayerModel {
     String lbl = 'B-';
     if (numVal >= 95) {
       lbl = 'A+';
-    } else if (numVal >= 85) { lbl = 'A'; }
-    else if (numVal >= 80) {lbl = 'A-'; }
-    else if (numVal >= 75) {lbl = 'B+';}
-    else if (numVal >= 70) {lbl = 'B';}
-    else if (numVal >= 65) {lbl = 'B-';}
-    else if (numVal >= 60) {lbl = 'C+';}
-    else if (numVal >= 55) {lbl = 'C';}
+    } else if (numVal >= 90) { lbl = 'A'; }
+    else if (numVal >= 85) {lbl = 'A-'; }
+    else if (numVal >= 80) {lbl = 'B+';}
+    else if (numVal >= 75) {lbl = 'B';}
+    else if (numVal >= 70) {lbl = 'B-';}
+    else if (numVal >= 66) {lbl = 'C+';}
+    else if (numVal >= 60) {lbl = 'C';}
     else { lbl = 'C-';}
 
     CardTier tier = CardTier.bronze;
     if (numVal >= 80) {
       tier = CardTier.gold;
-    } else if (numVal >= 65) {
+    } else if (numVal >= 70) {
       tier = CardTier.silver;
     }
 
