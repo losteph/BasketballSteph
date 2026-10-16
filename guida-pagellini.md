@@ -1,15 +1,15 @@
 # 🎙️ Guida Ufficiale per il Telecronista / Statistico a Bordo Campo
 
-Questa guida spiega esattamente come funziona l'algoritmo di valutazione di **Basket Steph** (ispirato a *Flashscore*) e stabilisce le regole pratiche per chi tiene il tabellone durante la partita. 
+Questa guida spiega esattamente come funziona l'algoritmo di valutazione. Stabiliamo le regole pratiche per chi tiene il tabellone durante la partita, per ottenere voti oggettivi. 
 
-Poiché c'è **una sola persona** a bordo campo a inserire i dati in tempo reale, l'obiettivo non è registrare ogni singolo respiro come in NBA, ma **catturare le giocate evidenti che spostano la partita** in modo equo e coerente per tutti.
+Se c'è **una sola persona** a bordo campo a inserire i dati in tempo reale, l'obiettivo non è registrare ogni singolo respiro come in NBA, ma **catturare le giocate evidenti che spostano la partita** in modo equo e coerente per tutti.
 
 ---
 
 ## 📊 Tabella Ufficiale Bonus / Malus (Singolo Decimale)
 
 Ogni giocatore parte da un **Voto Base di 6.0**.
-*(Nota: chi gioca meno di 3 minuti e non registra punti, assist, rimbalzi o buone azioni riceve **SV - Senza Voto**).*
+*(Nota: chi gioca meno di 3 minuti e non registra punti o assist riceve **SV - Senza Voto**).*
 
 | Azione / Evento | Tasto App | Variazione Voto | 
 | :--- | :--- | :---: | :--- |
@@ -32,42 +32,40 @@ Ogni giocatore parte da un **Voto Base di 6.0**.
 
 I punti (`+3`, `+2`, `+1`) e i falli sono oggettivi. Ecco invece come comportarsi senza esitazioni sulle voci che possono generare dubbi durante il gioco:
 
-### 1. Quando assegnare `⭐ Buona Azione` (+0.3)?
+### 1. Quando assegnare `⭐ Buona Azione`?
 Questo tasto esiste per **premiare chi difende forte e fa il lavoro sporco** anche se segna zero punti. Assegnalo **SOLO** in questi casi netti:
 * **Palla Rubata / Intercetto (Steal)**: Il difensore strappa la palla dalle mani dell'avversario o intercetta un passaggio avviando il contropiede.
 * **Stoppata (Block)**: Il difensore stoppa regolarmente un tiro avversario.
-* **Difesa Decisiva / Sfondamento Preso**: Il difensore tiene un 1 contro 1 difficilissimo costringendo l'attaccante a buttare la palla fuori, a far scadere i 24 secondi o a commettere fallo di sfondamento.
 * **Salvataggio in Tuffo (Hustle Play)**: Recupero di un pallone vagante buttandosi a terra e dandolo a un compagno.
-> **NON assegnarlo** per un normale passaggio a metà campo o per una difesa ordinaria senza recupero.
+> **NON assegnarlo** per un normale passaggio a metà campo o per una difesa ordinaria (senza recupero).
 
 ---
 
-### 2. Quando assegnare `❌ Errore / Persa` (-0.2)?
-Questo tasto unifica le **Palle Perse (Turnover)** e i **Tiri Sbagliati Gravi**, evitando che chi tira 20 volte facendo solo 3 canestri prenda 8 in pagella. Assegnalo in questi casi:
+### 2. Quando assegnare `❌ Errore / Persa`?
+Questo tasto unifica le **Palle Perse (Turnover)** e i **Tiri Sbagliati Gravi**. Assegnalo in questi casi:
 * **Passaggio Regalato / Palla Persa**: Passaggio mandato direttamente fuori dal campo o in mano agli avversari, palleggio sul piede, infrazione di passi o doppio palleggio.
-* **Airball o Tiro Forzatissimo Egoista**: Un tiro da tre punti sparato fuori misura (airball) con i compagni liberi, o un'entrata suicida contro tre difensori che finisce in nulla.
+* **Airball o Tiro Forzatissimo Egoista**: Un tiro da tre punti sparato fuori misura (airball) con i compagni liberi, o un'entrata (suicida) contro tre difensori che finisce in nulla.
 * **Errore Sotto Canestro Clamoroso**: Sbagliare un appoggio (layup) facilissimo tutto solo sotto il ferro.
-* **Serie di Tiri Sbagliati**: Se un tiratore sta chiaramente forzando e sbaglia 2-3 tiri di fila, assegnagli un `❌ Errore` per bilanciare la sua percentuale.
-> **NON assegnare errore** su ogni singolo tiro normale che gira sul ferro ed esce durante un'azione ben costruita, altrimenti i voti crolleranno tutti sotto il 5.0! Penalizza **le palle perse vere** e **i tiri sbagliati netti/forzati**.
+> **Occhio:* va bene (in caso non si riesca a segnare tutto) tralasciare errori multipli su ogni singolo tiro normale che gira sul ferro ed esce (comunque un minimo preciso o con azione ben costruita), altrimenti i voti crollano. Ma dobbiamo assolutamente penalizzare **le palle perse vere** e **i tiri sbagliati netti/forzati**.
 
 ---
 
-### 3. Quando assegnare `🖐️ Rimbalzo` (+0.2)?
+### 3. Quando assegnare `🖐️ Rimbalzo`?
 Al campetto ci sono decine di rimbalzi: non serve segnarli tutti se la palla cade semplicemente in mano a un giocatore da solo. Assegna il rimbalzo quando:
 * **Rimbalzo Conteso nel Traffico**: Il giocatore salta in mezzo agli avversari e cattura con forza la palla (sia in difesa che in attacco).
-* **Rimbalzo Offensivo (Extra-Possesso)**: Qualsiasi rimbalzo preso in attacco dopo un tiro sbagliato da un compagno (vale doppio a livello morale perché regala un nuovo tiro alla squadra!).
+* **Rimbalzo Offensivo (Extra-Possesso)**: Qualsiasi rimbalzo preso in attacco dopo un tiro sbagliato da un compagno.
 
 ---
 
-### 4. Quando assegnare l'`🅰️ Assist` (+0.2)?
+### 4. Quando assegnare l'`🅰️ Assist`?
 * Assegna l'assist **solo se il passaggio porta direttamente al canestro** (il compagno riceve e tira subito, oppure fa al massimo un palleggio/terzo tempo per appoggiare a canestro).
 * Se il compagno riceve palla a metà campo, palleggia per 8 secondi scartando due uomini e segna, **non è assist** ma azione personale di chi ha segnato.
 
 ---
 
-### 5. Gestione del `⚠️ Fallo Personale` (-0.3)
+### 5. Gestione del `⚠️ Fallo Personale`
 * Ogni fallo chiamato (difensivo o in attacco) va registrato sul giocatore che lo ha commesso.
-* Se c'è un fallo duro o antisportivo/tecnico evidente per proteste, puoi premere `⚠️ Fallo` + `❌ Errore` sullo stesso giocatore per dargli una penalità complessiva di **-0.5**.
+* Se c'è un fallo duro o antisportivo/tecnico evidente per proteste, puoi premere `⚠️ Fallo` + `❌ Errore` sullo stesso giocatore per dargli una aggravante.
 
 ---
 
