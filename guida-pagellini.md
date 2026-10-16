@@ -11,18 +11,18 @@ Poiché c'è **una sola persona** a bordo campo a inserire i dati in tempo reale
 Ogni giocatore parte da un **Voto Base di 6.0**.
 *(Nota: chi gioca meno di 3 minuti e non registra punti, assist, rimbalzi o buone azioni riceve **SV - Senza Voto**).*
 
-| Azione / Evento | Tasto App | Variazione Voto | Note |
+| Azione / Evento | Tasto App | Variazione Voto | 
 | :--- | :--- | :---: | :--- |
-| **Vittoria Squadra** | *(Automatico)* | **+0.2** | Assegnato a fine gara ai vincitori |
-| **Sconfitta Squadra** | *(Automatico)* | **-0.1** | Assegnato a fine gara agli sconfitti |
-| **Tripla (+3 PT)** | `🎯 Tripla (+3)` | **+0.4** | +0.2 extra a chi fa l'eventuale assist |
-| **Canestro (+2 PT)** | `🏀 Canestro (+2)` | **+0.3** | +0.2 extra a chi fa l'eventuale assist |
-| **Tiro Libero (+1 PT)** | `☄️ Libero (+1)` | **+0.1** | Tiro libero o punto singolo realizzato |
-| **Assist** | *(Menu a tendina)* | **+0.2** | Selezionato prima di premere +2 o +3 |
-| **Rimbalzo** | `🖐️ Rimbalzo` | **+0.2** | Resetta anche lo Shot Clock a 14s |
-| **Buona Azione** | `⭐ Buona Azione` | **+0.3** | Recupero, stoppata, grande difesa |
-| **Errore / Palla Persa** | `❌ Errore / Persa` | **-0.2** | Palla persa o forzatura/tiro sbagliato |
-| **Fallo Personale** | `⚠️ Fallo Personale` | **-0.3** | Incrementa anche il conteggio falli (max 5) |
+| **Vittoria Squadra** | *(Automatico)* | **+0.2** | 
+| **Sconfitta Squadra** | *(Automatico)* | **-0.1** |
+| **Tripla (+3 PT)** | `🎯 Tripla (+3)` | **+0.5** | 
+| **Canestro (+2 PT)** | `🏀 Canestro (+2)` | **+0.3** | 
+| **Tiro Libero (+1 PT)** | `☄️ Libero (+1)` | **+0.1** | 
+| **Assist** | *(Menu a tendina)* | **+0.2** |
+| **Rimbalzo** | `🖐️ Rimbalzo` | **+0.2** | 
+| **Buona Azione** | `⭐ Buona Azione` | **+0.1** | 
+| **Errore / Palla Persa** | `❌ Errore / Persa` | **-0.2** | 
+| **Fallo Personale** | `⚠️ Fallo Personale` | **-0.4** | 
 
 *Il voto finale è sempre arrotondato a un singolo decimale e bloccato nel range tra **1.0** (minimo) e **9.9** (massimo).*
 
