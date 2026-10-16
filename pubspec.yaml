@@ -1,0 +1,28 @@
+name: basketball_steph
+description: "Trying to make an app."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.5
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Icone e utility
+  cupertino_icons: ^1.0.8
+
+  # Salvataggio dati offline e gestione file JSON
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.2
+  file_picker: ^8.0.0
+  share_plus: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
