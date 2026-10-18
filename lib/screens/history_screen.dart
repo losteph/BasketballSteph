@@ -400,7 +400,7 @@ class HistoryScreenState extends State<HistoryScreen> {
         final bool playedEnough = p.playedSeconds >= 180;
 
         if (!hasAction && !playedEnough) {
-          res[team]!.add({'id': p.dbId, 'num': p.num, 'name': p.name, 'role': p.role.name, 'score': 'SV', 'numScore': 0.0});
+          res[team]!.add({'id': p.dbId, 'num': p.num, 'name': p.name, 'role': p.role.name, 'score': 'SV', 'numScore': 0.0, 'inField': p.inField});
           continue;
         }
 
@@ -431,6 +431,7 @@ class HistoryScreenState extends State<HistoryScreen> {
           'assists': assists,
           'malusCount': fouls + turnovers,
           'playedSeconds': p.playedSeconds,
+          'inField': p.inField,
         };
 
         res[team]!.add(pData);
@@ -694,7 +695,7 @@ final filteredEvents = m.events.where((e) => salienti.contains(e.type)).toList()
                             ],
                           ),
                           const SizedBox(height: 4),
-                          ...ratings['home']!.map((r) => _buildPagellaRow(r)),
+                          ..._buildPagelleListWithBench(ratings['home']!),
                           const Divider(color: Color(0xFF334155), height: 24),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -704,7 +705,7 @@ final filteredEvents = m.events.where((e) => salienti.contains(e.type)).toList()
                             ],
                           ),
                           const SizedBox(height: 4),
-                          ...ratings['away']!.map((r) => _buildPagellaRow(r)),
+                          ..._buildPagelleListWithBench(ratings['away']!),
                         ],
                       ),
 
@@ -871,6 +872,53 @@ final filteredEvents = m.events.where((e) => salienti.contains(e.type)).toList()
       ),
     );
   }
+
+
+  Widget _buildBenchDivider() {
+    return const Padding(
+      padding: EdgeInsets.symmetric(vertical: 8),
+      child: Row(
+        children: [
+          Expanded(child: Divider(color: Color(0xFF334155), thickness: 1)),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 8),
+            child: Text(
+              'PANCHINA',
+              style: TextStyle(
+                color: Color(0xFF94A3B8),
+                fontSize: 10,
+                fontWeight: FontWeight.w900,
+                letterSpacing: 0.8,
+              ),
+            ),
+          ),
+          Expanded(child: Divider(color: Color(0xFF334155), thickness: 1)),
+        ],
+      ),
+    );
+  }
+
+  List<Widget> _buildPagelleListWithBench(List<Map<String, dynamic>> rawList) {
+    final list = List<Map<String, dynamic>>.from(rawList);
+    list.sort((a, b) {
+      final aSt = a['inField'] != false ? 1 : 0;
+      final bSt = b['inField'] != false ? 1 : 0;
+      return bSt.compareTo(aSt);
+    });
+
+    final List<Widget> widgets = [];
+    bool benchDividerShown = false;
+
+    for (final r in list) {
+      if (r['inField'] == false && !benchDividerShown) {
+        widgets.add(_buildBenchDivider());
+        benchDividerShown = true;
+      }
+      widgets.add(_buildPagellaRow(r));
+    }
+    return widgets;
+  }
+
 
   Widget _buildPagellaRow(Map<String, dynamic> r) {
     final isMvp = r['isMvp'] == true;

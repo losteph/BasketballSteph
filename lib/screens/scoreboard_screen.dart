@@ -567,6 +567,7 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
             'role': p.role.name,
             'score': 'SV',
             'details': 'Meno di 3m e 0 pt/assist',
+            'inField': p.inField,
           });
           continue;
         }
@@ -596,6 +597,7 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
           'role': p.role.name,
           'score': rounded.toStringAsFixed(1),
           'details': details.isNotEmpty ? details.join(', ') : 'Base 6.0',
+          'inField': p.inField,
         });
       }
     }
@@ -870,19 +872,29 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
             onPressed: () async {
               final hEmoji = _getTeamEmoji(_homeColor);
               final aEmoji = _getTeamEmoji(_awayColor);
-              var text = '🏀 *PAGELLINE BASKET*\n🏆 ${_homeNameCtrl.text} $_homeScore - $_awayScore ${_awayNameCtrl.text}\n\n';
+              var text = '⭐ *PAGELLINE BASKET*\n🏀 ${_homeNameCtrl.text} $_homeScore - $_awayScore ${_awayNameCtrl.text}\n\n';
               
-              text += '$hEmoji *${_homeNameCtrl.text}*\n';
-              for (final r in ratings['home']!) {
-                final isMvp = r['id'] == mvpId && r['score'] != 'SV';
-                text += '• _#${r['num']} ${r['name']}:_ *${r['score']}* ${isMvp ? "⭐ MVP" : ""}\n';
+              String buildBasketPagelle(String teamName, String emoji, List<MatchRosterPlayer> initRoster, List<Map<String, dynamic>> rateList) {
+                String block = '$emoji *$teamName*\n';
+                final inField = initRoster.where((p) => p.inField).toList();
+                final bench = initRoster.where((p) => !p.inField).toList();
+
+                for (var p in inField) {
+                  final r = rateList.firstWhere((x) => x['id'] == p.dbId, orElse: () => {'score': 'SV'});
+                  block += '• _#${p.num} ${p.name} (${p.role.name}):_ *${r['score']}*\n';
+                }
+                if (bench.isNotEmpty) {
+                  block += '  -- _Panchina_ --\n';
+                  for (var p in bench) {
+                    final r = rateList.firstWhere((x) => x['id'] == p.dbId, orElse: () => {'score': 'SV'});
+                    block += '• _#${p.num} ${p.name} (${p.role.name}):_ *${r['score']}*\n';
+                  }
+                }
+                return block;
               }
-              
-              text += '\n$aEmoji *${_awayNameCtrl.text}*\n';
-              for (final r in ratings['away']!) {
-                final isMvp = r['id'] == mvpId && r['score'] != 'SV';
-                text += '• _#${r['num']} ${r['name']}:_ *${r['score']}* ${isMvp ? "⭐ MVP" : ""}\n';
-              }
+
+              text += buildBasketPagelle(_homeNameCtrl.text, hEmoji, _initialLineupHome ?? _homePlayers, ratings['home']!);
+              text += '\n${buildBasketPagelle(_awayNameCtrl.text, aEmoji, _initialLineupAway ?? _awayPlayers, ratings['away']!)}';
               
               await Clipboard.setData(ClipboardData(text: text));
               if (mounted) {
