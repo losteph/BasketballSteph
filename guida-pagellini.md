@@ -12,7 +12,7 @@ Ogni giocatore parte da un **Voto Base di 6.0**.
 *(Nota: chi gioca meno di 3 minuti e non registra punti o assist riceve **SV - Senza Voto**).*
 
 | Azione / Evento | Tasto App | Variazione Voto | 
-| :--- | :--- | :---: | :--- |
+| :--- | :--- | :---: | 
 | **Vittoria Squadra** | *(Automatico)* | **+0.2** | 
 | **Sconfitta Squadra** | *(Automatico)* | **-0.1** |
 | **Tripla (+3 PT)** | `🎯 Tripla (+3)` | **+0.5** | 
@@ -66,6 +66,7 @@ Al campetto ci sono decine di rimbalzi: non serve segnarli tutti se la palla cad
 ### 5. Gestione del `⚠️ Fallo Personale`
 * Ogni fallo chiamato (difensivo o in attacco) va registrato sul giocatore che lo ha commesso.
 * Se c'è un fallo duro o antisportivo/tecnico evidente per proteste, puoi premere `⚠️ Fallo` + `❌ Errore` sullo stesso giocatore per dargli una aggravante.
+* Se c'è un fallo tattico utile alla squadra si può premiare con `⚠️ Fallo` + `⭐ Buona Azione` per ammortizzare il voto.
 
 ---
 
