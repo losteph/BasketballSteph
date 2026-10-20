@@ -16,10 +16,6 @@ subprojects {
     project.layout.buildDirectory.value(newSubprojectBuildDir)
 
     project.evaluationDependsOn(":app")
-
-    tasks.withType<com.android.build.gradle.internal.tasks.AarMetadataTask>().configureEach {
-        enabled = false
-    }
 }
 
 tasks.register<Delete>("clean") {
