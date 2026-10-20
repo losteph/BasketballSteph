@@ -436,11 +436,13 @@ class HistoryScreenState extends State<HistoryScreen> {
 
         res[team]!.add(pData);
 
-        if (score > maxScore) {
-          maxScore = score;
+        final double roundedScore = double.parse(score.toStringAsFixed(1));
+
+        if (roundedScore > maxScore) {
+          maxScore = roundedScore;
           currentMvp = pData;
           isDrawMvp = false;
-        } else if (score == maxScore && currentMvp != null) {
+        } else if (roundedScore == maxScore && currentMvp != null) {
           final bool pWinner = pData['isWinner'] as bool;
           final bool mvpWinner = currentMvp['isWinner'] as bool;
           if (pWinner && !mvpWinner) {
