@@ -22,6 +22,18 @@ jobs:
         with:
           channel: 'stable'
 
+      - name: Clean Flutter build
+        run: |
+          flutter clean
+          rm -rf android/.gradle
+          rm -rf build
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Build APK
+        run: flutter build apk --release
+
       - name: Installa i pacchetti (pub get)
         run: flutter pub get
 
