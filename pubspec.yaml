@@ -16,7 +16,7 @@ dependencies:
   # Salvataggio dati offline e gestione file JSON
   shared_preferences: ^2.2.2
   path_provider: ^2.1.2
-  file_picker: ^8.1.6
+  file_picker: ^10.3.3
   share_plus: ^10.1.4
 
   audioplayers: ^6.1.0
