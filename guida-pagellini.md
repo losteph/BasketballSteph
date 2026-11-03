@@ -15,12 +15,12 @@ Ogni giocatore parte da un **Voto Base di 6.0**.
 | :--- | :--- | :---: | 
 | **Vittoria Squadra** | *(Automatico)* | **+0.2** | 
 | **Sconfitta Squadra** | *(Automatico)* | **-0.1** |
-| **Tripla (+3 PT)** | `🎯 Tripla (+3)` | **+0.5** | 
+| **Tripla (+3 PT)** | `🎯 Tripla (+3)` | **+0.4** | 
 | **Canestro (+2 PT)** | `🏀 Canestro (+2)` | **+0.3** | 
 | **Tiro Libero (+1 PT)** | `☄️ Libero (+1)` | **+0.1** | 
 | **Assist** | *(Menu a tendina)* | **+0.2** |
-| **Rimbalzo** | `🖐️ Rimbalzo` | **+0.2** | 
-| **Buona Azione** | `⭐ Buona Azione` | **+0.1** | 
+| **Rimbalzi** | `🖐️ Rimbalzi` | **+0.1** | 
+| **Buona Azione** | `⭐ Buona Azione` | **+0.3** | 
 | **Errore / Palla Persa** | `❌ Errore / Persa` | **-0.2** | 
 | **Fallo Personale** | `⚠️ Fallo Personale` | **-0.4** | 
 
