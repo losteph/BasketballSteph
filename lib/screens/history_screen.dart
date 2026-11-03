@@ -408,12 +408,12 @@ class HistoryScreenState extends State<HistoryScreen> {
         if (won) score += 0.2;
         if (lost) score -= 0.1;
 
-        score += (pts3 * 0.5);
+        score += (pts3 * 0.4);
         score += (pts2 * 0.3);
         score += (pts1 * 0.1);
         score += (assists * 0.2);
-        score += (goodPlays * 0.1);
-        score += (rebounds * 0.2);
+        score += (goodPlays * 0.3);
+        score += (rebounds * 0.1);
         score -= (turnovers * 0.2);
         score -= (fouls * 0.4);
 

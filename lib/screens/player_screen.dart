@@ -197,9 +197,9 @@ class PlayersScreenState extends State<PlayersScreen> {
                   child: Row(
                     children: [
                       _buildFilterChip('Tutti', 'ALL', _tierFilter, (v) => setState(() => _tierFilter = v)),
-                      _buildFilterChip('🥇 Oro', 'GOLD', _tierFilter, (v) => setState(() => _tierFilter = v)),
-                      _buildFilterChip('🥈 Argento', 'SILVER', _tierFilter, (v) => setState(() => _tierFilter = v)),
-                      _buildFilterChip('🥉 Bronzo', 'BRONZE', _tierFilter, (v) => setState(() => _tierFilter = v)),
+                      _buildFilterChip('🥇', 'GOLD', _tierFilter, (v) => setState(() => _tierFilter = v)),
+                      _buildFilterChip('🥈', 'SILVER', _tierFilter, (v) => setState(() => _tierFilter = v)),
+                      _buildFilterChip('🥉', 'BRONZE', _tierFilter, (v) => setState(() => _tierFilter = v)),
                     ],
                   ),
                 ),
