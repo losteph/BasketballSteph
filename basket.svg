@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <rect width="500" height="500" rx="90" fill="#171a21" />
+  <g stroke="#ff6600" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="50" y="130" width="400" height="240" rx="16" />
+    <line x1="250" y1="130" x2="250" y2="370" />
+    <circle cx="250" cy="250" r="40" />
+    <circle cx="250" cy="250" r="4" fill="#ff6600" />
+    <path d="M 50,165 L 125,195 L 125,305 L 50,335 Z" />
+    <rect x="50" y="200" width="75" height="100" />
+    <path d="M 125,200 A 50,50 0 0,1 125,300" />
+    <path d="M 50,145 L 125,145 A 120,120 0 0,1 125,355 L 50,355" />
+    <line x1="72" y1="230" x2="72" y2="270" />
+    <circle cx="85" cy="250" r="12" />
+    <line x1="72" y1="250" x2="73" y2="250" />
+    <path d="M 450,165 L 375,195 L 375,305 L 450,335 Z" />
+    <rect x="375" y="200" width="75" height="100" />
+    <path d="M 375,200 A 50,50 0 0,0 375,300" />
+    <path d="M 450,145 L 375,145 A 120,120 0 0,0 375,355 L 450,355" />
+    <line x1="428" y1="230" x2="428" y2="270" />
+    <circle cx="415" cy="250" r="12" />
+    <line x1="428" y1="250" x2="427" y2="250" />
+  </g>
+</svg>
