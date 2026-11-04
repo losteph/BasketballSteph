@@ -106,18 +106,6 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
   void initState() {
     super.initState();
     _activeTournamentId = widget.initialTournamentId;
-    if (widget.initialHomeName != null) {
-    _homeNameCtrl.text = widget.initialHomeName!;
-    }
-    if (widget.initialAwayName != null) {
-      _awayNameCtrl.text = widget.initialAwayName!;
-    }
-    if (widget.initialHomeColor != null) {
-      _homeColor = widget.initialHomeColor!;
-    }
-    if (widget.initialAwayColor != null) {
-      _awayColor = widget.initialAwayColor!;
-    }
     _setupInitialRosters();
   }
 
