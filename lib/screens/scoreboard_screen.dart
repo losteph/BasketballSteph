@@ -582,7 +582,7 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
         if (pts2 > 0) { score += (pts2 * 0.3); details.add('+${(pts2 * 0.3).toStringAsFixed(1)} 2PT'); }
         if (pts1 > 0) { score += (pts1 * 0.1); details.add('+${(pts1 * 0.1).toStringAsFixed(1)} 1PT'); }
         if (assists > 0) { score += (assists * 0.2); details.add('+${(assists * 0.2).toStringAsFixed(1)} assist'); }
-        if (goodPlays > 0) { score += (goodPlays * 0.3); details.add('+${(goodPlays * 0.3).toStringAsFixed(1)} buone'); }
+        if (goodPlays > 0) { score += (goodPlays * 0.2); details.add('+${(goodPlays * 0.2).toStringAsFixed(1)} buone'); }
         if (rebounds > 0) { score += (rebounds * 0.1); details.add('+${(rebounds * 0.1).toStringAsFixed(1)} rimb'); }
         if (turnovers > 0) { score -= (turnovers * 0.2); details.add('-${(turnovers * 0.2).toStringAsFixed(1)} palle perse'); }
         if (fouls > 0) { score -= (fouls * 0.4); details.add('-${(fouls * 0.4).toStringAsFixed(1)} falli'); }
