@@ -1,4 +1,18 @@
-# 🏀 Basketball Steph - Official App & Scoreboard
+<div align="center">
+
+<img src="basket.svg" width="110" alt="FootballSteph Logo">
+
+# 🏀 Basketball Steph
+
+**La piattaforma completa offline-first sviluppata in Flutter per gestire partite amatoriali di basket, tornei a classifica e pagelline automatiche.**
+
+[![Web App PWA](https://img.shields.io/badge/PWA-Basketball_Steph-3B82F6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://losteph.github.io/BasketballSteph/)
+
+[![Android APK](https://img.shields.io/badge/Android-Scarica_APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/losteph/BasketballSteph/releases/latest/download/app-release.apk)
+
+</div>
+
+---
 
 **Basketball Steph** è un'applicazione multipiattaforma (Android APK & Web PWA) progettata per la gestione completa di partite, tornei, statistiche e pagelle di basket (5v5 o 3v3 da campetto). Ispirata ai sistemi professionali e alle card *FUT/NBA 2K*, trasforma ogni partita tra amici o torneo amatoriale in un'esperienza ufficiale con dati reali e cronaca live.
 
