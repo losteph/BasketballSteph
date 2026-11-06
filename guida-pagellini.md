@@ -20,7 +20,7 @@ Ogni giocatore parte da un **Voto Base di 6.0**.
 | **Tiro Libero (+1 PT)** | `☄️ Libero (+1)` | **+0.1** | 
 | **Assist** | *(Menu a tendina)* | **+0.2** |
 | **Rimbalzi** | `🖐️ Rimbalzi` | **+0.1** | 
-| **Buona Azione** | `⭐ Buona Azione` | **+0.3** | 
+| **Buona Azione** | `⭐ Buona Azione` | **+0.2** | 
 | **Errore / Palla Persa** | `❌ Errore / Persa` | **-0.2** | 
 | **Fallo Personale** | `⚠️ Fallo Personale` | **-0.4** | 
 
